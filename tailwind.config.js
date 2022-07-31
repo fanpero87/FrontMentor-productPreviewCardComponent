@@ -3,6 +3,10 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: (theme) => ({
+        "mobile": "url('/src/images/image-product-mobile.jpg')",
+        "desktop": "url('/src/images/image-product-desktop.jpg')",
+      }),
       screens: {
         'mobile': '375px',
         'desktop': '1440px'
